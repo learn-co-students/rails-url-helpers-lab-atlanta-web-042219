@@ -10,4 +10,4 @@ Student.destroy_all
 
 scott = Student.create(first_name: "Scott", last_name: "Toney")
 keri = Student.create(first_name: "Keri", last_name: "Geier", active: true)
-Student.create!(first_name: "Daenerys", last_name: "Targaryen")
+# Student.create!(first_name: "Daenerys", last_name: "Targaryen")
