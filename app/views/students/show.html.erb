@@ -1,1 +1,22 @@
 <h1><%= @student.to_s %></h1>
+
+<%= @student.active %> <br>
+
+<% if @student.active == false %>
+<%= "This student is currently inactive." %>
+
+<% else %>
+<%= "This student is currently active." %>
+
+<%end%>
+
+
+<%= link_to 'change status', activate_student_path, method: :get %>
+
+<br>
+
+<% if @student.my_url != nil %>
+    <a href="https://<%= @student.my_url %>">My link</a><br>
+<% end %>
+<a href=<%= students_path %>>Back</a>
+`
